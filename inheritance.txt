@@ -1,0 +1,62 @@
+package org.friday;
+import java.util.*;
+class Student
+{
+	int rollno;
+	String name,address;
+	void input1()
+	{
+		Scanner ob=new Scanner(System.in);
+		System.out.println("enter rollno,name and address");
+		rollno=ob.nextInt();
+		name=ob.next();
+		address=ob.next();
+	}
+	void display1()
+	{
+		System.out.println("the rollno is "+rollno);
+		System.out.println("the name is "+name);
+		System.out.println("the address is "+address);
+			}}
+
+-----------------------------------------------------------------------------------
+package org.friday;
+import java.util.*;
+public class Acadamic extends Student 
+{
+float s1,s2,s3,sum,avg,grade;
+void input()
+{
+	input1();
+	Scanner ob=new Scanner(System.in);
+	System.out.println("enter 3 subject's marks");
+	s1=ob.nextFloat();	s2=ob.nextFloat();	s3=ob.nextFloat();
+	sum=s1+s2+s3;	avg=sum/3;
+	}
+void display()
+{
+	display1();
+	System.out.println("the total is "+sum);
+	System.out.println("the average is "+avg);
+	if(avg>60)
+	{
+		System.out.println("pass");
+	}
+	else
+	{
+		System.out.println("FAIL");
+	}
+	}
+public static void main(String[] args)
+{
+Acadamic obj=new Acadamic();
+obj.input();
+obj.display();
+}
+}
+
+
+
+
+
+----------------------------
