@@ -113,4 +113,36 @@ System.out.println(obj.getCompany());
 }
 }
 -----------------------------------
+package org.friday;
+public class construct 
+{
+construct()
+{
+	System.out.println("default");
+}
+construct(int a,int b)
+{
+	System.out.println("the sum is "+(a+b));
+}
+int sum(int a,int b) //function overloading
+{
+	return a+b;
+	}
+float sum(float a,float b)
+{
+	return a+b;
+}
+public static void main(String[] args)
+{
+construct ob=new construct();//we have to create that many objects as many
+construct ob1=new construct(4,5);//constructors you want to execute
+construct ob2=new construct(6,7);
+System.out.println("the sum in fun "+ob.sum(5, 9));
+System.out.println("the sum in fun "+ob.sum(15.5f, 19.4f));
+}
+}
 
+
+https://github.com/sandipmohapatra/legatojava
+
+-------------------
